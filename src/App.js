@@ -48,7 +48,7 @@ function App() {
         <ul>
             {list && list.map( (item, idx) => {
                 return (
-                    <li ket={idx+item.email}>{item.email}</li>
+                    <li key={idx+item.email}>{item.email}</li>
                 )
             })}
         </ul>
